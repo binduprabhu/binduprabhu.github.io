@@ -219,9 +219,6 @@ const Projects = () => {
       <div className="project-inner">
         <header>
           <div className="project-top">
-            <div className="folder">
-              <Icon name="Folder" />
-            </div>
             <div className="project-links">
               {github && (
                 <a href={github} aria-label="GitHub Link" target="_blank" rel="noreferrer">
@@ -242,7 +239,7 @@ const Projects = () => {
           </div>
 
           <h3 className="project-title">
-            <a href={external} target="_blank" rel="noreferrer">
+            <a href={external ? external : github ? github : '#'} target="_blank" rel="noreferrer">
               {title}
             </a>
           </h3>
@@ -259,7 +256,7 @@ const Projects = () => {
             </ul>
           )}
         </footer>
-      </div>
+      </div >
     );
   };
 
