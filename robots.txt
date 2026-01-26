@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://binduprabhu.github.io/sitemap.xml
+Host: https://binduprabhu.github.io
