@@ -69,20 +69,13 @@ const StyledPic = styled.div`
       transform: translate(-4px, -4px);
 
       &:after {
-        transform: translate(8px, 8px);
-      }
-
-      .img {
-        filter: none;
-        mix-blend-mode: normal;
+        transform: translate(4px, 4px);
       }
     }
 
     .img {
       position: relative;
       border-radius: var(--border-radius);
-      mix-blend-mode: multiply;
-      filter: grayscale(100%) contrast(1);
       transition: var(--transition);
     }
 
@@ -98,10 +91,7 @@ const StyledPic = styled.div`
     }
 
     &:before {
-      top: 0;
-      left: 0;
-      background-color: var(--navy);
-      mix-blend-mode: screen;
+      display: none;
     }
 
     &:after {
