@@ -125,7 +125,14 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['JavaScript (ES6+)', 'TypeScript', 'React', 'Eleventy', 'Node.js', 'WordPress'];
+  const skills = [
+    'SQL & BigQuery',
+    'Python (pandas, NumPy)',
+    'Power BI & Tableau',
+    'dbt',
+    'Apache Spark',
+    'PyTorch',
+  ];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
@@ -135,30 +142,27 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              Hello! My name is Brittany and I enjoy creating things that live on the internet. My
-              interest in web development started back in 2012 when I decided to try editing custom
-              Tumblr themes — turns out hacking together a custom reblog button taught me a lot
-              about HTML &amp; CSS!
+              Hello! My name is Bindu and I'm passionate about transforming data into actionable
+              insights. My journey into data analytics began during my Computer Science degree,
+              where I discovered the power of SQL and Python to solve real-world business problems.
             </p>
 
             <p>
-              Fast-forward to today, and I’ve had the privilege of working at{' '}
-              <a href="https://us.mullenlowe.com/">an advertising agency</a>,{' '}
-              <a href="https://starry.com/">a start-up</a>,{' '}
-              <a href="https://www.apple.com/">a huge corporation</a>, and{' '}
-              <a href="https://scout.camd.northeastern.edu/">a student-led design studio</a>. My
-              main focus these days is building accessible, inclusive products and digital
-              experiences at <a href="https://upstatement.com/">Upstatement</a> for a variety of
-              clients.
+              I recently completed my M.Sc. in Data Science at the University of Europe for Applied
+              Sciences with a grade of 82.04% (2.0 in German grading). My studies focused on
+              statistics, forecasting, and applied ML. For my thesis, I used pre-trained CNNs to
+              extract visual features from 1,416 microscopy images, exploring their structure with
+              t-SNE and UMAP.
             </p>
 
             <p>
-              I also recently{' '}
-              <a href="https://www.newline.co/courses/build-a-spotify-connected-app">
-                launched a course
-              </a>{' '}
-              that covers everything you need to build a web app with the Spotify API using Node
-              &amp; React.
+              Currently, I'm a Data Engineering & Analytics Extern at{' '}
+              <a href="https://www.zetheta.com/">Zetheta Algorithms</a>, where I build dbt models
+              and ingestion pipelines in PostgreSQL. Previously, I worked at{' '}
+              <a href="https://www.jsw.in/">JSW Paint</a> as a Data Analyst Intern, building
+              standardized reporting tables in BigQuery, and at{' '}
+              <a href="https://pentagonspace.in/">Pentagon Space</a>
+              focusing on marketing and funnel analytics.
             </p>
 
             <p>Here are a few technologies I’ve been working with recently:</p>
