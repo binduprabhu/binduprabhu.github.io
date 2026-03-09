@@ -186,20 +186,15 @@ const Certifications = () => {
       <div className="cert-inner">
         <header>
           <div className="cert-top">
-            <div className="folder">
-              <Icon name="Bookmark" />
-            </div>
             <div className="cert-links">
-              {url && (
-                <a
-                  href={url}
-                  aria-label="External Link"
-                  className="external"
-                  target="_blank"
-                  rel="noreferrer">
-                  <Icon name="External" />
-                </a>
-              )}
+              <a
+                href={url || '#'}
+                aria-label="External Link"
+                className="external"
+                target="_blank"
+                rel="noreferrer">
+                <Icon name="External" />
+              </a>
             </div>
           </div>
 
