@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import styled from 'styled-components';
 import { srConfig } from '@config';
@@ -139,6 +140,28 @@ const StyledCertification = styled.li`
       ${({ theme }) => theme.mixins.inlineLink};
     }
   }
+
+  .cert-image {
+    margin-top: 20px;
+    width: 100%;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+
+    .img {
+      border-radius: var(--border-radius);
+      mix-blend-mode: multiply;
+      filter: grayscale(100%) contrast(1) brightness(90%);
+      transition: var(--transition);
+
+      &:hover,
+      &:focus {
+        mix-blend-mode: normal;
+        filter: none;
+      }
+    }
+  }
 `;
 
 const Certifications = () => {
@@ -155,6 +178,11 @@ const Certifications = () => {
               company
               url
               date(formatString: "MMMM YYYY")
+              cover {
+                childImageSharp {
+                  gatsbyImageData(width: 500, placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
+                }
+              }
             }
             html
           }
@@ -180,11 +208,12 @@ const Certifications = () => {
 
   const certInner = node => {
     const { frontmatter, html } = node;
-    const { url, title, company, date } = frontmatter;
+    const { url, title, company, date, cover } = frontmatter;
+    const image = getImage(cover);
 
     return (
       <div className="cert-inner">
-        <header>
+        <header style={{ width: '100%' }}>
           <div className="cert-top">
             <div className="cert-links">
               <a
@@ -208,6 +237,12 @@ const Certifications = () => {
           </div>
 
           <div className="cert-description" dangerouslySetInnerHTML={{ __html: html }} />
+
+          {image && (
+            <div className="cert-image">
+              <GatsbyImage image={image} alt={title} className="img" />
+            </div>
+          )}
         </header>
       </div>
     );
