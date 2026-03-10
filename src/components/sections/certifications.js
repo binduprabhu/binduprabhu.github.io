@@ -5,7 +5,6 @@ import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import styled from 'styled-components';
 import { srConfig } from '@config';
 import sr from '@utils/sr';
-import { Icon } from '@components/icons';
 import { usePrefersReducedMotion } from '@hooks';
 
 const StyledCertificationsSection = styled.section`
@@ -135,6 +134,7 @@ const StyledCertification = styled.li`
   .cert-description {
     color: var(--light-slate);
     font-size: 17px;
+    margin-bottom: 20px;
 
     a {
       ${({ theme }) => theme.mixins.inlineLink};
@@ -213,37 +213,26 @@ const Certifications = () => {
 
     return (
       <div className="cert-inner">
-        <header style={{ width: '100%' }}>
-          <div className="cert-top">
-            <div className="cert-links">
-              <a
-                href={url || '#'}
-                aria-label="External Link"
-                className="external"
-                target="_blank"
-                rel="noreferrer">
-                <Icon name="External" />
-              </a>
-            </div>
-          </div>
-
-          <h3 className="cert-title">
-            <a href={url ? url : '#'} target="_blank" rel="noreferrer">
+        <h3 className="cert-title">
+          {url ? (
+            <a href={url} target="_blank" rel="noreferrer">
               {title}
             </a>
-          </h3>
-          <div className="cert-company">
-            {company} &bull; {date}
-          </div>
-
-          <div className="cert-description" dangerouslySetInnerHTML={{ __html: html }} />
-
-          {image && (
-            <div className="cert-image">
-              <GatsbyImage image={image} alt={title} className="img" />
-            </div>
+          ) : (
+            title
           )}
-        </header>
+        </h3>
+        <div className="cert-company">
+          {company} &bull; {date}
+        </div>
+
+        <div className="cert-description" dangerouslySetInnerHTML={{ __html: html }} />
+
+        {image && (
+          <div className="cert-image">
+            <GatsbyImage image={image} alt={title} className="img" />
+          </div>
+        )}
       </div>
     );
   };
