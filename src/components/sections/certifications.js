@@ -144,22 +144,34 @@ const StyledCertification = styled.li`
   .cert-image {
     margin-top: 20px;
     width: 100%;
+    min-height: 200px;
+    background-color: var(--navy);
+    border: 1px dashed var(--slate);
     border-radius: var(--border-radius);
     overflow: hidden;
     position: relative;
     z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:before {
+      content: 'Certificate Image Placeholder';
+      color: var(--slate);
+      font-size: var(--fz-xs);
+      font-family: var(--font-mono);
+    }
 
     .img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
       border-radius: var(--border-radius);
-      mix-blend-mode: multiply;
-      filter: grayscale(100%) contrast(1) brightness(90%);
+      mix-blend-mode: normal;
+      filter: none;
       transition: var(--transition);
-
-      &:hover,
-      &:focus {
-        mix-blend-mode: normal;
-        filter: none;
-      }
     }
   }
 `;
