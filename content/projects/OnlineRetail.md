@@ -8,4 +8,4 @@ tech:
 showInProjects: true
 ---
 
-Analyzing Online Retail and Titanic Datasets Overview This project aims to analyze datasets from the Online Retail and Titanic datasets using advanced technologies such as Docker, Apache Airflow, Terraform, and Google BigQuery. These technologies are leveraged to establish a well-organized and reproducible workflow for data analysis, ensuring consi
+An end-to-end data engineering project that analyzes the Online Retail and Titanic datasets. It utilizes Docker, Apache Airflow, and Google BigQuery to establish a scalable, reproducible workflow for comprehensive data analysis.

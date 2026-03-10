@@ -10,4 +10,4 @@ tech:
 showInProjects: true
 ---
 
-Pulled live GitHub public activity via the GitHub REST API, transformed nested JSON into analysis tables, and visualized trends.
+A data exploration tool that consumes GitHub's REST API to analyze public activity. It extracts nested JSON data, transforms it into structured tables, and visualizes trends in repository creation and global developer activity.

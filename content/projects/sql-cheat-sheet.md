@@ -8,4 +8,4 @@ tech:
 showInProjects: true
 ---
 
-📌 Practical SQL Cheat Sheet with real-world queries from basics to advanced scenarios. Great for data analysis and interview prep.
+A comprehensive resource containing common and advanced SQL queries for data science and analysis. Designed as a quick-reference guide for interview preparation and real-world database troubleshooting.

@@ -14,4 +14,4 @@ tech:
   - AWS
 ---
 
-A modern e-commerce platform with a built-in end-to-end analytics pipeline. It tracks user behavior (page views, purchases) in real-time using **Apache Kafka**, transforms raw data into business logic with **dbt**, and visualizes key metrics through an integrated **Metabase** dashboard. Deployed on **AWS** using custom **CloudFormation** templates.
+A specialized e-commerce solution featuring an end-to-end analytics pipeline. It tracks user behavior in real-time via Apache Kafka, processes data with dbt, and visualizes KPIs through Metabase, all deployed on AWS using custom CloudFormation infrastructure.

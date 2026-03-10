@@ -12,4 +12,4 @@ tech:
   - XAI
 ---
 
-Trained and compared CNN models in GPU-enabled environments for classifying drones vs. birds in aerial imagery. Performed error analysis and used Grad-CAM to interpret predictions and understand model decision-making. Published in IRJET (International Research Journal of Engineering and Technology).
+A research-driven deep learning project focused on classifying drones and birds in aerial imagery. It implements and compares multiple CNN architectures using PyTorch, utilizing Grad-CAM for explainable AI and model interpretability. (Published in IRJET).

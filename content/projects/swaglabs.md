@@ -8,4 +8,4 @@ tech:
 showInProjects: true
 ---
 
-Junior QA Automation task for AnyTax
+A QA automation suite developed for the Swag Labs e-commerce platform. It demonstrates automated testing best practices, including end-to-end user flow verification and UI reliability checks.

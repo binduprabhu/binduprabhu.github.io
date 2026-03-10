@@ -11,4 +11,4 @@ tech:
   - BigQuery
 ---
 
-Pulled live GitHub public activity via the GitHub REST API, transformed nested JSON into analysis tables, and visualized trends (repo creation, commits/pushes, event types). Extended analysis using GH Archive public events in BigQuery to explore larger patterns.
+A comprehensive data engineering project that captures live GitHub activity via REST APIs. It employs Google BigQuery and Python for large-scale analysis of repo trends, commit patterns, and global developer events.

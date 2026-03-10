@@ -8,4 +8,4 @@ tech:
 showInProjects: true
 ---
 
-A modern e-commerce platform with a built-in end-to-end analytics pipeline. It tracks user behavior (page views, purchases) in real-time using Apache Kafka, transforms raw data into business logic with dbt, and visualizes key metrics through an integrated Metabase dashboard.
+A modern e-commerce platform integrated with a real-time data analytics pipeline. It leverages Apache Kafka for activity tracking, dbt for data transformation, and Metabase for business intelligence dashboards.
