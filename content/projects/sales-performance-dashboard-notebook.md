@@ -8,4 +8,4 @@ tech:
 showInProjects: true
 ---
 
-An interactive sales performance dashboard built within a Jupyter Notebook environment. It features real-time KPIs, time-series analysis, and product-level insights using Plotly and Pandas.
+📊 Interactive Sales Dashboard in Jupyter Notebook with KPIs, time-series trends, and product insights using Plotly.
