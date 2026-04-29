@@ -146,13 +146,12 @@ const About = () => {
             </p>
 
             <p>
-              Currently, I'm a Data Engineering & Analytics Extern at{' '}
-              <a href="https://www.zetheta.com/">Zetheta Algorithms</a>, where I build dbt models
-              and ingestion pipelines in PostgreSQL. Previously, I worked at{' '}
+              Previously, I worked at{' '}
+              <a href="https://jssuni.edu.in/">JSS Academy of Higher Education & Research</a> as a
+              Data Engineering Intern, where I extracted and integrated data from enterprise systems
+              and developed structured databases. Prior to that, I worked at{' '}
               <a href="https://www.jsw.in/">JSW Paint</a> as a Data Analyst Intern, building
-              standardized reporting tables in BigQuery, and at{' '}
-              <a href="https://pentagonspace.in/">Pentagon Space</a>
-              focusing on marketing and funnel analytics.
+              standardized reporting tables in BigQuery.
             </p>
 
             <p>Here are a few technologies I’ve been working with recently:</p>
